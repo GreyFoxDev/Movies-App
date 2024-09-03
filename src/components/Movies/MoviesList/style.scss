@@ -1,0 +1,53 @@
+@import "../../../assets/sass/variables.scss";
+
+.movies-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  .movie-item {
+    background-color: $card-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    height: 504px;
+    padding: 8px 8px 16px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    margin-bottom: 24px;
+    margin-right: 24px;
+    &.mr-0 {
+      margin-right: 0px;
+    }
+    &--poster {
+      width: 266px;
+      height: 400px;
+      flex-shrink: 0;
+      border-radius: 12px;
+    }
+    &--title {
+      text-transform: capitalize;
+      color: $white-color;
+      font-family: $font-family;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; /* 160% */
+      display: inline-block;
+      margin: 10px 8px;
+    }
+    &--publishYear {
+      margin: 0px 8px;
+
+      color: $white-color;
+      font-family: $font-family;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+  }
+}

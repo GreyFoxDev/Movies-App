@@ -1,0 +1,24 @@
+@import "../../assets/sass/variables.scss";
+.app-btn {
+  display: inline-flex;
+  padding: 15px 126px;
+  align-items: flex-start;
+  gap: 5px;
+  border: none;
+  border-radius: 10px;
+  background: $secondary-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: $white-color;
+  text-align: center;
+  font-family: $font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  cursor: pointer;
+  &.outline {
+    background-color: transparent;
+    border: 1px solid $white-color;
+    box-shadow: none;
+  }
+}

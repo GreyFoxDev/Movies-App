@@ -1,0 +1,10 @@
+@import "../../assets/sass/variables.scss";
+
+.file-uploader {
+  background-color: $primary-color;
+  border-color: $white-color !important;
+  height: 350px !important;
+  span {
+    color: $white-color !important;
+  }
+}
